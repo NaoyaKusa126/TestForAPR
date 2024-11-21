@@ -1,8 +1,9 @@
 # buggy_script.py
 
-def divide_numbers(a, b):
-    """Divide two numbers."""
-    return a / b  # Bug: No handling for division by zero
+    "Divide two numbers, returning None if division by zero is attempted."
+    if b == 0:
+        return None  # Handle division by zero
+    return a / b
 
 # Main function to trigger bugs
 if __name__ == "__main__":
